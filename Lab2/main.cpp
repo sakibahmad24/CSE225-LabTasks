@@ -13,5 +13,9 @@ int main()
 
     c = a+b;
 
+    a.Print();
+    b.Print();
     c.Print();
+
+
 }
