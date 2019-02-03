@@ -1,10 +1,12 @@
 #include "complex.h"
 #include <iostream>
 
+using namespace std;
+
 Complex::Complex()
 {
     Real = 0;
-    Imaginary 0;
+    Imaginary = 0;
 
 }
 
