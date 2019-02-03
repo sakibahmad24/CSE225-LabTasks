@@ -1,0 +1,6 @@
+#ifndef LAB1_H_INCLUDED
+#define LAB1_H_INCLUDED
+
+
+
+#endif // LAB1_H_INCLUDED
