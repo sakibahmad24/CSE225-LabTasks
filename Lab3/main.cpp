@@ -13,9 +13,14 @@ int main()
 
      ut.printlist();
 
-     ut.DeleteItem(10);
-     ut.RetrieveItem(50);
 
+     int x = 50;
+     bool y = true;
+     ut.RetrieveItem(x, y);
+
+     cout << y <<endl;
+
+     ut.DeleteItem(10);
      ut.printlist();
 
 }
