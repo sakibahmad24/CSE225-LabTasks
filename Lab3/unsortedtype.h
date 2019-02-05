@@ -11,19 +11,18 @@ public:
     UnsortedType();
     void MakeEmpty();
     bool IsFull();
-    int Lengththis();
+    int Lengthis();
     void InsertItem(ItemType);
     void DeleteItem(ItemType);
     void RetrieveItem(ItemType&, bool&);
     void ResetList();
-    void GetNextItem(ItemType&;
-    void print();
+    void GetNextItem(ItemType&);
+    void printlist();
 private:
     int length;
     ItemType info[MAX_ITEMS];
     int currentPos;
 
 };
-
 
 #endif // UNSORTEDTYPE_H_INCLUDED
