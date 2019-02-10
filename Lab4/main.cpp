@@ -16,6 +16,13 @@ int main()
 
     st.DeleteItem(7);
     st.PrintList();
+
+    int x = 2;
+     bool y = true;
+     st.RetrieveItem(x, y);
+
+     cout << y <<endl;
+
     st.MakeEmpty();
     st.PrintList();
     return 0;
