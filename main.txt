@@ -1,0 +1,16 @@
+#include <iostream>
+#include "unsortedtype.h"
+#include "unsortedtype.cpp"
+using namespace std;
+
+int main()
+{
+    UnsortedType<int>s;
+    s.InsertItem(12);
+    s.InsertItem(28);
+    s.InsertItem(36);
+    s.InsertItem(42);
+    cout<<endl;
+    s.printList();
+    cout<<endl;
+}
