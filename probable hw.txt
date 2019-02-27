@@ -1,0 +1,90 @@
+#include <iostream>
+
+using namespace std;
+
+
+int fib(int n)
+{
+
+    int b=0;
+    if (n==0)
+    {
+        return b;
+    }
+    else if (n==1)
+    {
+        return b=1;
+    }
+    else{
+        return fib(n-1) + fib(n-2);
+
+    }
+}
+
+int fact(int n)
+{
+    if (n==0 || n==1)
+        return 1;
+    else
+        return n*fact(n-1);
+}
+int sum(int n)
+{
+    if (n==0)
+        return 0;
+    else
+        return (n%10+sum(n/10));
+}
+int rec(int a[], int n)
+{
+    int mini;
+
+    if (n==1)
+        return a[0];
+    else{
+        mini = rec(a, n-1);
+
+        if (mini<a[n-1])
+            return mini;
+        else
+            return a[n-1];
+    }
+}
+int convert(int dec)
+{
+    if (dec==0)
+        return 0;
+    else
+       {
+         return
+            (dec%2 + 10 * convert(dec/2));
+       }
+}
+int main()
+{
+    int x, i, j, b, a[100], dec;
+    cout<<"Insert the nth term to be found: "<<endl;
+    cin>>x;
+    cout<<"The "<<x<<" term is: "<<fib(x);
+
+    cout<<endl<< "Factorial: "<<endl;
+    cin>>x;
+    cout<<"The factorial is: "<<fact(x);
+
+    cout<<endl<<"Enter Digits: "<<endl;
+    cin>>x;
+    cout<<"The sum of digits: "<<sum(x);
+
+    cout<<endl<<"Enter array size: "<<endl;
+    cin>>b;
+    cout<<"Enter elements: "<<endl;
+    for (i=0; i<b;  i++)
+    {
+        cin>>a[i];
+    }
+    cout<<"smallest int: "<<rec(a, b);
+
+    cout<<endl<<"Enter decimal number: "<<endl;
+    cin>>dec;
+    cout<<"The binary equivalent is: "<<convert(dec);
+}
