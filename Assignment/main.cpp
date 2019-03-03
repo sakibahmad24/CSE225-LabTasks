@@ -50,6 +50,13 @@ int main()
 
     cout<<reverseNum(toBeRev, 0)<<endl;
 
+    //code for reversing a number ends
+
+    //code for bin to dec starts
+
+    int dec;
+    cout<<"::Enter a Binary number to convert it to Decimal::"<<endl;
+    cin >> dec;
 
 
 
