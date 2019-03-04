@@ -1,4 +1,6 @@
 #include <iostream>
+#include<math.h>
+#include <cstdlib>
 
 using namespace std;
 
@@ -19,6 +21,15 @@ int reverseNum(int toBeRev, int revNum)
 
     return reverseNum(toBeRev/10, revNum);
 }
+
+int binToDec(int binaryNum)
+{
+    if(!(binaryNum/10))
+        return (binaryNum);
+    return (binaryNum % 10 + binToDec(binaryNum/10)*2);
+}
+
+
 
 
 
@@ -54,12 +65,15 @@ int main()
 
     //code for bin to dec starts
 
-    int dec;
-    cout<<"::Enter a Binary number to convert it to Decimal::"<<endl;
-    cin >> dec;
+    int binaryNum;
 
+    cout<<"::Enter a binary number to convert::"<<endl;
+    cin>>binaryNum;
 
+    cout<<"::the converted decimal number is::"<<endl;
+    cout<<binToDec(binaryNum)<<endl;
 
+    //code for bin to dec ends
 
     return 0;
 
