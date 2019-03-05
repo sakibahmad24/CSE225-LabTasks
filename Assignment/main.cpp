@@ -1,6 +1,7 @@
 #include <iostream>
 #include<math.h>
 #include <cstdlib>
+#include <cstring>
 
 using namespace std;
 
@@ -55,6 +56,54 @@ int decToBin(int decNum)
     }
 
 */
+
+bool isPalRec(string check, int start, int end)
+{
+    if(start == end)
+        return true;
+    if(check[start] != check[end])
+        return false;
+
+    if(start<end+1)
+        return isPalRec(check, start+1, end-1);
+    return true;
+}
+
+bool isPalindrome(string check)
+{
+    int n = check.size();
+
+    if(n==0)
+        return true;
+    return isPalRec(check, 0, n-1);
+}
+
+int product(int n1, int n2)
+{
+   if(n2 == 0)
+      return 0;
+
+   if(n2 > 0)
+      return (n1 + product(n1, n2 - 1));
+
+   if(n2 < 0)
+      return -product(n1, -n2);
+}
+
+double seriesSum(int sumUpto)
+{
+    if(sumUpto==1)
+    {
+        return 1;
+    }
+    else
+    {
+        return 1.0/sumUpto + seriesSum(sumUpto-1);
+    }
+
+}
+
+
 
 
 
@@ -115,6 +164,7 @@ int main()
 
     */
 
+    /*
     int decNum2=0;
 
     cout<<"::Enter a decimal number to convert into hex::"<<endl;
@@ -123,6 +173,41 @@ int main()
     decToHex(decNum2);
 
 
+
+    //palindrome code starts here
+
+    string check;
+    cout<<"::Enter a string to check whether it is palindrome or not::"<<endl;
+    cin>>check;
+
+    if(isPalindrome(check))
+        cout<<"Yes!"<<endl;
+    else
+        cout<<"No!"<<endl;
+
+    //palindrome ends here
+
+    //multiplication starts here
+
+
+    int x, y;
+
+    cout<<"::Enter two integers::"<<endl;
+    cin>>x>>y;
+
+    cout<<""<<endl;
+
+    cout<<"Product = "<< product(x, y) <<endl;
+
+    //multiplication ends here
+
+    */
+
+    int sumUpto;
+
+    cout<<"::Enter a limit to get the summation upto::"<<endl;
+    cin>>sumUpto;
+    cout<<"The sum is:: "<<seriesSum(sumUpto)<<endl;
 
     return 0;
 
