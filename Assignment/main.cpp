@@ -103,6 +103,15 @@ double seriesSum(int sumUpto)
 
 }
 
+void reverseString(char *str)
+{
+   if (*str)
+   {
+       reverseString(str+1);
+       cout<<*str;
+   }
+}
+
 
 
 
@@ -112,7 +121,7 @@ int main()
 {
 
     //code for finding fibonacci number starts
-    /*
+
 
 
 
@@ -162,16 +171,14 @@ int main()
     cout<<""<<endl;
     //code for dec to bin ends
 
-    */
-
-    /*
+/*
     int decNum2=0;
 
     cout<<"::Enter a decimal number to convert into hex::"<<endl;
     cin>>decNum2;
     cout<<"::The converted number in hex is::"<<endl;
     decToHex(decNum2);
-
+*/
 
 
     //palindrome code starts here
@@ -201,7 +208,7 @@ int main()
 
     //multiplication ends here
 
-    */
+    //summation series starts
 
     int sumUpto;
 
@@ -209,6 +216,13 @@ int main()
     cin>>sumUpto;
     cout<<"The sum is:: "<<seriesSum(sumUpto)<<endl;
 
+    char a[] = "Hello CSE225!";
+    reverseString(a);
+
+    //summation series ends
+
+
     return 0;
+
 
 }
