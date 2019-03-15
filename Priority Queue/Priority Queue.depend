@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1552205257 source:c:\users\my pc\desktop\lab 14\priority queue\heaptype.cpp
+	<algorithm>
+	"heaptype.h"
+
+1552203376 c:\users\my pc\desktop\lab 14\priority queue\heaptype.h
+
+1552205001 source:c:\users\my pc\desktop\lab 14\priority queue\main.cpp
+	<iostream>
+	"pqtype.h"
+	"pqtype.cpp"
+
+1552205155 source:c:\users\my pc\desktop\lab 14\priority queue\pqtype.cpp
+	<iostream>
+	"pqtype.h"
+
+1552205127 c:\users\my pc\desktop\lab 14\priority queue\pqtype.h
+	"heaptype.h"
+	"heaptype.cpp"
+
+1552205257 c:\users\my pc\desktop\lab 14\priority queue\heaptype.cpp
+	<algorithm>
+	"heaptype.h"
+
+1552204781 c:\users\my pc\desktop\lab 14\priority queue\pqtype.cpp
+	"pqtype.h"
+
